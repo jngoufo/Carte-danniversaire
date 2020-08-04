@@ -1,0 +1,160 @@
+
+/***********Default CSS = Phones => most popular screens = 360 + 375 + 414 + 601 */
+body, html{
+	height: 100%;
+	margin: 0;
+}
+body{
+	background-image:url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png), linear-gradient(180deg, #87ceeb -20%, transparent), url(https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif);
+}
+
+#flashImg {
+	width: 25%;
+}
+
+#fond {
+	background-image: url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849668/Carte%20Anniv%20Jud/Mob-Jai-une-surprise-pour-toi-_no-white-background_-min.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*Center align the gift image and icon*/
+#surprise {
+	margin: 0;
+	position: absolute;
+	top: 45%;
+	left: 75%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+
+
+i.fas.fa-hand-point-down {
+	position: relative;
+	left: 0.5em;
+	font-size: 5em;
+	color: #503335;
+}
+
+/*Center align elements*/
+#video {
+    min-width: 100%;
+}
+.introVideo {
+    display: block;
+	margin: 0 auto;
+	width: 65%;
+}
+
+.message {
+    width: 100%;
+}
+#msgBtn1 {
+	position: absolute;
+	margin: 0;
+	transform: translate(-50%, -50%);
+	left: 50%;
+}
+video#happyBirthdayVideo, img#msgBtn2, img#final {
+    position: absolute;
+}
+
+/***********Tablets => most popular screens = 768 + 800 + 962*/
+@media only screen and (min-width:768px) and (max-width:1023px) { 
+	#fond {
+		background-image: url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849668/Carte%20Anniv%20Jud/Tab-Jai-une-surprise-pour-toi-_no-white-background_-min.png);
+	}	
+	/*i.fas.fa-hand-point-down {
+		position: relative;
+		left: .25em;
+	}
+	#surprise {
+		position: relative;
+		top: 40%;
+		left: 75%;
+	  }*/
+	.introVideo {
+		width: 50%;
+	}
+}
+/*****************Laptops => popular screens = 1024 + 1280 + 1366*/
+@media only screen and (min-width:1024px) and (max-width:1439px) { 
+	#fond {
+		background-image: url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849667/Carte%20Anniv%20Jud/Desk-Jai-une-surprise-pour-toi-_no-white-background_-min.png);
+	}	
+	/*i.fas.fa-hand-point-down {
+		position: relative;
+		left: .2em;
+	}
+	#surprise {
+		position: relative;
+		top: 40%;
+		left: 75%;
+	  }*/
+	  .introVideo {
+		width: 50%;
+	}
+}
+
+/*@media only screen and (min-width:1366px) and (max-width:1439px) { 
+
+	#surprise {
+		position: relative;
+		top: 40%;
+		left: 80%;
+	  }
+	  i.fas.fa-hand-point-down {
+		position: relative;
+		left: .25em;
+	}
+
+}*/
+
+/*******Large Laptop + Small Desktop => most popular screens = 1440 + 1536*/
+@media only screen and (min-width:1440px) and (max-width:1919px) { 
+	#fond {
+		background-image: url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849667/Carte%20Anniv%20Jud/Desk-Jai-une-surprise-pour-toi-_no-white-background_-min.png);
+	}	
+
+	#flashImg {
+		width: 10%;
+	}
+
+	/*#surprise {
+		position: relative;
+		top: 40%;
+		left: 80%;
+	  }*/
+	  i.fas.fa-hand-point-down {
+		position: relative;
+		left: .3em;
+	}
+	.introVideo {
+		width: 25%;
+	}
+}
+
+/*Large Desktop & TV  => most popular screens = 1920*/
+@media only screen and (min-width:1920px) { 
+	#fond {
+		background-image: url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849667/Carte%20Anniv%20Jud/Desk-Jai-une-surprise-pour-toi-_no-white-background_-min.png);
+	}	
+
+	#flashImg {
+		width: 10%;
+	}
+	/*#surprise {
+		position: relative;
+		top: 40%;
+		left: 90%;
+	}*/
+	i.fas.fa-hand-point-down {
+		position: relative;
+		left: 0.5em;
+	}
+	.introVideo {
+		width: 25%;
+	}
+}
