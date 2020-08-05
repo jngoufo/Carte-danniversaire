@@ -1,37 +1,23 @@
-// I hide some element when the user opens the page
-let title = $('.title'), surprise = $('#surprise'), message = $('.message'), msgBtn1 = $('#msgBtn1'), msgBtn2 = $('#msgBtn2'), wish = $('.wish'), introVideo = $('.introVideo'), 
+let surprise = $('#surprise'), msgBtn1 = $('#msgBtn1'), msgBtn2 = $('#msgBtn2'), introVideo = $('.introVideo'), 
 flashButton = $('.flashButton'), birthdayVideo = $('#happyBirthdayVideo'), final = $('#final'), interval_msgBtn, fondPage = $('#fond'), docBody = $('body');
-
-message.hide();
+// I hide some element when the user opens the page
 msgBtn1.hide();
 msgBtn2.hide();
 final.hide();
-wish.hide();  
 introVideo.hide();
 birthdayVideo.hide();
 
-function clearAtInterval(btn){
-    clearInterval(btn);
-};
-function btnSelfTimer(happening){
-    setTimeout(happening, 5000); // l'evenement en parametre se produira apres 5 secondes
-};
-
-function play(video){
-    video.autoplay=true;
-};
 
 function flashTheButton(button){
-    message.show();
     button.show();
-    $('body').css('background-image', 'url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png), linear-gradient(180deg, #87ceeb -20%, transparent), url(https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif)')
+    $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #87ceeb -20%, transparent), url("https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif")')
     interval_msgBtn = setInterval(function(){
         button.fadeToggle()
     }, 1000)
 };
 
 function hideVideo(myVideo, callback){
-    myVideo.fadeOut(400, callback)
+    myVideo.fadeOut(500, callback)
 };
 
 function changeBalloonImg(){
@@ -48,7 +34,9 @@ function changeBalloonImg(){
         fondPage.css('background-image','url("https://res.cloudinary.com/monwebmestre/image/upload/v1595850085/Carte%20Anniv%20Jud/Mob-Video-Background-min.png")');
     }
 }
-//Let's make the suprise button flashes
+
+$(document).ready(function(){
+//Let's make the suprise button flash
 let blink = setInterval(function(){
     $('figcaption').fadeToggle()
 }, 800);
@@ -56,10 +44,10 @@ let blink = setInterval(function(){
 //Let's trigger an event when the mouse hovers over buttons
 function mouseListener(button){
     button.mouseover(function(){
-        $('body').css('background-image', 'url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png), linear-gradient(180deg, #87ceeb -20%, transparent)')
+        $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #87ceeb -20%, transparent)')
     })
     button.mouseout(function(){
-        $('body').css('background-image', 'url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png), linear-gradient(180deg, #87ceeb -20%, transparent), url(https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif)')
+        $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #87ceeb -20%, transparent), url("https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif")')
     })
 }
 
@@ -72,7 +60,7 @@ flashButton.click(function(){
     clearInterval(blink); // we stop the flash
     surprise.hide();// we hide the suprise button
     changeBalloonImg();
-    $('body').css('background-image', 'url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849045/Carte%20Anniv%20Jud/Star_background-min.gif)');
+    $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1596623723/Carte%20Anniv%20Jud/Star_background-min.gif")');
     fondPage.css({ // Adjust background img size to screen dimensions
         'display':'flex',
         'justify-content':'center',
@@ -91,7 +79,7 @@ flashButton.click(function(){
 msgBtn1.click(function(){
     clearInterval(interval_msgBtn); // envelope stops flashing
     $(this).hide(); // envelope is hidden
-    $('body').css('background-image', 'url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849045/Carte%20Anniv%20Jud/Star_background-min.gif)');
+    $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1596623723/Carte%20Anniv%20Jud/Star_background-min.gif")');
     birthdayVideo.fadeIn('slow');
     document.querySelector('#happyBirthdayVideo').addEventListener('ended', function(){
         hideVideo(birthdayVideo, flashTheButton(msgBtn2))
@@ -101,10 +89,10 @@ msgBtn1.click(function(){
 msgBtn2.click(function(){
     clearInterval(interval_msgBtn);
     $(this).hide();
-    $('body').css('background-image', 'url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849045/Carte%20Anniv%20Jud/Star_background-min.gif)');
+    $('body').css('background-image', 'url(https://res.cloudinary.com/monwebmestre/image/upload/v1596623723/Carte%20Anniv%20Jud/Star_background-min.gif)');
     final.fadeIn('fast');
 })
 
-
+})
 
 
