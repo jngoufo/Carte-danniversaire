@@ -10,7 +10,7 @@ birthdayVideo.hide();
 
 function flashTheButton(button){
     button.show();
-    $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #87ceeb -20%, transparent), url("https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif")')
+    $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #7ddaff -20%, transparent), url("https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif")')
     interval_msgBtn = setInterval(function(){
         button.fadeToggle()
     }, 1000)
@@ -44,10 +44,10 @@ let blink = setInterval(function(){
 //Let's trigger an event when the mouse hovers over buttons
 function mouseListener(button){
     button.mouseover(function(){
-        $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #87ceeb -20%, transparent)')
+        $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #7ddaff -20%, transparent)')
     })
     button.mouseout(function(){
-        $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #87ceeb -20%, transparent), url("https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif")')
+        $('body').css('background-image', 'url("https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png"), linear-gradient(180deg, #7ddaff -20%, transparent), url("https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif")')
     })
 }
 
