@@ -5,7 +5,7 @@ body, html{
 	margin: 0;
 }
 body{
-	background-image:url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png), linear-gradient(180deg, #87ceeb -20%, transparent), url(https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif);
+	background-image:url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849460/Carte%20Anniv%20Jud/Confetti-background_photo-min.png), linear-gradient(180deg, #7ddaff -20%, transparent), url(https://res.cloudinary.com/monwebmestre/image/upload/v1595848520/Carte%20Anniv%20Jud/Confetti-background-min.gif);
 }
 
 #flashImg {
