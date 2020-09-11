@@ -66,15 +66,6 @@ video#happyBirthdayVideo, img#msgBtn2, img#final {
 	#fond {
 		background-image: url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849668/Carte%20Anniv%20Jud/Tab-Jai-une-surprise-pour-toi-_no-white-background_-min.png);
 	}	
-	/*i.fas.fa-hand-point-down {
-		position: relative;
-		left: .25em;
-	}
-	#surprise {
-		position: relative;
-		top: 40%;
-		left: 75%;
-	  }*/
 	.introVideo {
 		width: 50%;
 	}
@@ -84,33 +75,11 @@ video#happyBirthdayVideo, img#msgBtn2, img#final {
 	#fond {
 		background-image: url(https://res.cloudinary.com/monwebmestre/image/upload/v1595849667/Carte%20Anniv%20Jud/Desk-Jai-une-surprise-pour-toi-_no-white-background_-min.png);
 	}	
-	/*i.fas.fa-hand-point-down {
-		position: relative;
-		left: .2em;
-	}
-	#surprise {
-		position: relative;
-		top: 40%;
-		left: 75%;
-	  }*/
 	  .introVideo {
 		width: 50%;
 	}
 }
 
-/*@media only screen and (min-width:1366px) and (max-width:1439px) { 
-
-	#surprise {
-		position: relative;
-		top: 40%;
-		left: 80%;
-	  }
-	  i.fas.fa-hand-point-down {
-		position: relative;
-		left: .25em;
-	}
-
-}*/
 
 /*******Large Laptop + Small Desktop => most popular screens = 1440 + 1536*/
 @media only screen and (min-width:1440px) and (max-width:1919px) { 
@@ -122,11 +91,6 @@ video#happyBirthdayVideo, img#msgBtn2, img#final {
 		width: 10%;
 	}
 
-	/*#surprise {
-		position: relative;
-		top: 40%;
-		left: 80%;
-	  }*/
 	  i.fas.fa-hand-point-down {
 		position: relative;
 		left: .3em;
@@ -145,11 +109,6 @@ video#happyBirthdayVideo, img#msgBtn2, img#final {
 	#flashImg {
 		width: 10%;
 	}
-	/*#surprise {
-		position: relative;
-		top: 40%;
-		left: 90%;
-	}*/
 	i.fas.fa-hand-point-down {
 		position: relative;
 		left: 0.5em;
